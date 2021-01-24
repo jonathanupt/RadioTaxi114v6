@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="radiotaxi114.radiotaxi114v6.RankingActivity">
+
+ <!--
+    <item android:id="@+id/action_compartir" android:title="@string/action_compartir"
+        android:orderInCategory="100" app:showAsAction="ifRoom" android:icon="@mipmap/icon_compartir50" />
+
+    <item android:id="@+id/action_acerca_de" android:title="@string/action_acerca_de"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_salir" android:title="@string/action_salir"
+        android:orderInCategory="100" app:showAsAction="never" />
+-->
+</menu>

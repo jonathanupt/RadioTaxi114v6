@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dra_fondo_listado_item">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CapRanking">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+
+            <TextView
+                style="@style/est_etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Und.:"
+                android:id="@+id/textView85"
+                android:layout_alignTop="@+id/ImgFoto"
+                android:layout_toRightOf="@+id/ImgFoto"
+                android:layout_toEndOf="@+id/ImgFoto"
+                android:layout_weight="0.7" />
+
+            <TextView android:id="@+id/CmpSoporteContactoNombre"
+                style="@style/est_contenido"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="unidad"
+                android:layout_below="@+id/textView24"
+                android:layout_toRightOf="@+id/imageView3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="2dp"
+                android:background="@drawable/dra_campo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="1"
+            android:layout_weight="0.08">
+
+            <TextView
+                style="@style/est_etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Conductor:"
+                android:id="@+id/textView86"
+                android:layout_alignTop="@+id/ImgFoto"
+                android:layout_toRightOf="@+id/ImgFoto"
+                android:layout_toEndOf="@+id/ImgFoto"
+                android:layout_weight="0.7" />
+
+            <TextView
+                style="@style/est_contenido"
+
+                android:id="@+id/CmpSoporteContactoCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="conductor"
+                android:layout_below="@+id/textView26"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/textView26"
+                android:layout_alignStart="@+id/textView26"
+
+                android:layout_margin="2dp"
+                android:background="@drawable/dra_campo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+
+            <TextView
+                style="@style/est_etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Total:"
+                android:id="@+id/textView87"
+                android:layout_alignTop="@+id/ImgFoto"
+                android:layout_toRightOf="@+id/ImgFoto"
+                android:layout_toEndOf="@+id/ImgFoto"
+                android:layout_weight="0.7" />
+
+            <TextView
+                style="@style/est_contenido"
+                android:id="@+id/CmpRankingTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_below="@+id/textView24"
+                android:layout_toRightOf="@+id/imageView3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="2dp"
+                android:autoText="false"
+                android:background="@drawable/dra_campo" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

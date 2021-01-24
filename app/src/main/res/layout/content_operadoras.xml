@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="radiotaxi114.radiotaxi114v6.OperadorasActivity"
+    tools:showIn="@layout/activity_operadoras"
+    android:background="@drawable/dra_fondo"
+    >
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LstOperadoras"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/CapOperadorasContenidos"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/fondo_listado" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CapOperadorasContenidos"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            style="@style/est_etiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se encontraron (0) operadores"
+            android:id="@+id/CmpOperadorasTotal"
+            android:layout_alignLeft="@+id/spinner"
+            android:layout_alignStart="@+id/spinner" />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

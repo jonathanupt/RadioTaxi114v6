@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dra_fondo_listado_item"
+>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/ImgFoto"
+        android:src="@mipmap/icon_agenda_supervisor150"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout14"
+        android:layout_toRightOf="@+id/ImgFoto"
+        android:layout_toEndOf="@+id/ImgFoto">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Nombre"
+
+                style="@style/est_etiqueta"
+
+                android:id="@+id/textView27"
+                android:layout_alignTop="@+id/ImgFoto"
+                android:layout_toRightOf="@+id/ImgFoto"
+                android:layout_toEndOf="@+id/ImgFoto"
+                android:layout_weight="0.7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:background="@drawable/dra_campo"
+                android:id="@+id/CmpSoporteContactoCelular"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="jonathan"
+
+                style="@style/est_contenido"
+
+                android:layout_below="@+id/textView27"
+                android:layout_alignLeft="@+id/textView27"
+                android:layout_alignStart="@+id/textView27"
+                android:layout_weight="0.9" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout14"
+        android:layout_alignStart="@+id/ImgFoto"
+        android:layout_alignLeft="@+id/ImgFoto"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    style="@style/est_etiqueta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/CmpReferencia"
+
+                    android:layout_alignStart="@+id/ImgFoto"
+                    android:layout_alignLeft="@+id/ImgFoto"
+                    android:layout_weight="0.5"
+                    android:text="Unidad"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/CmpSoporteContactoNombre"
+
+                    style="@style/est_contenido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/textView29"
+
+                    android:layout_alignStart="@+id/textView29"
+
+                    android:layout_alignLeft="@+id/textView29"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/dra_campo"
+                    android:text="A-01" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView44"
+                    style="@style/est_etiqueta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView43"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginLeft="66dp"
+                    android:layout_toEndOf="@+id/textView28"
+                    android:layout_toRightOf="@+id/textView28"
+                    android:layout_weight="0.5"
+                    android:text="Celular"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/CmpConductorCelular"
+                    style="@style/est_contenido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView36"
+                    android:layout_toEndOf="@+id/textView28"
+                    android:layout_toRightOf="@+id/textView28"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/dra_campo"
+                    android:text="952216928" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    style="@style/est_etiqueta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView43"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginLeft="66dp"
+                    android:layout_toEndOf="@+id/textView28"
+                    android:layout_toRightOf="@+id/textView28"
+                    android:layout_weight="0.5"
+                    android:text="Turno"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ImgSupervisoresTurno"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/CmpConductorInspectorTurno"
+                        style="@style/est_contenido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView36"
+                        android:layout_toEndOf="@+id/textView28"
+                        android:layout_toRightOf="@+id/textView28"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/dra_campo"
+                        android:text="X"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PedidoCancelacionActivity"
+    tools:showIn="@layout/activity_pedido_cancelacion_activity"
+    android:background="@drawable/dra_fondo"
+    >
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CapScroll" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/CapScrollContenido">
+
+            <LinearLayout
+                android:background="@drawable/dra_fondo_contenido"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/CapBotones"
+                android:id="@+id/CapContenidos">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CmpMensaje"
+                    android:text="Por favor, indiquenos el motivo por el cual va a cancelar el pedido"
+
+                    style="@style/est_contenido"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupCancelar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/CmpMensaje"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        style="@style/est_contenido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CmpMensaje"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:checked="false"
+                        android:text="Servicio aceptado por error" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        style="@style/est_contenido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/CmpMensaje"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:checked="false"
+                        android:text="El cliente no se encuentra"
+                        android:visibility="gone" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        style="@style/est_contenido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CmpMensaje"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:checked="false"
+                        android:text="El cliente desea una movil station"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        style="@style/est_contenido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CmpMensaje"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:checked="false"
+                        android:text="Me encuentro lejos del objetivo"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        style="@style/est_contenido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CmpMensaje"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:checked="false"
+                        android:text="Operativo policial"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        style="@style/est_contenido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CmpMensaje"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:checked="false"
+                        android:text="Problemas mecanicos"
+                        android:visibility="gone" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/CapBotones">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar"
+                    android:id="@+id/BtnPedidoCancelarEnviar"
+
+                    android:background="@drawable/dra_boton_fondo"
+                    style="@style/est_boton"
+
+                    android:drawableLeft="@mipmap/icon_ok35"
+
+                    android:onClick="onClick_BtnPedidoCancelacionEnviar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dra_fondo"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PedidoDetalleActivity"
+    tools:showIn="@layout/activity_iniciar_viaje">
+
+
+    <LinearLayout
+        android:id="@+id/CapIniciarViajeContenidos"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CapTitulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/dra_fondo_contenido"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/CapCliente"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView23"
+                style="@style/est_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView20"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="0.1"
+
+                android:text="Cliente:" />
+
+            <TextView
+                android:id="@+id/CmpClienteNombre"
+                style="@style/est_contenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CmpNumero"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentLeft="true"
+
+                android:background="@drawable/dra_campo"
+                android:text="NOMBRE DEL CLIENTE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CapDireccion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CapCliente"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/textView25"
+                style="@style/est_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@+id/CmpClienteNombre"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="0.1"
+
+                android:text="Dirección:" />
+
+            <TextView
+                android:id="@+id/CmpSoporteContactoCelular"
+
+                style="@style/est_contenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView25"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/dra_campo"
+                android:text="DIRECCION DEL PEDIDO"
+
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CapIniciarViajeReferencia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CapDireccion"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/textView28"
+                style="@style/est_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/CmpSoporteContactoCelular"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="0.1"
+
+                android:text="Referencia:" />
+
+            <TextView
+                android:id="@+id/CmpPedidoReferencia"
+
+                style="@style/est_contenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView28"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/dra_campo"
+                android:text="REFERENCIA DEL PEDIDO"
+
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CapIniciarViajeDetalle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CapIniciarViajeReferencia"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView27"
+                style="@style/est_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/CmpPedidoReferencia"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="0.1"
+
+                android:text="Compra y Otros:" />
+
+            <TextView
+                android:id="@+id/CmpPedidoDetalle"
+
+                style="@style/est_pedido_actual_contenido_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView27"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/dra_campo"
+                android:text="DETALLE DEL PEDIDO"
+
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map1"
+        android:name="com.google.android.gms.maps.MapFragment"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CapIniciarViajePublicidad"
+        android:layout_below="@+id/CapIniciarViajeContenidos"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:id="@+id/CapIniciarViajePublicidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgPublicidadArchivo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_anuncie"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CapIniciarViajeBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CapIniciarViajePublicidad"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/CapIniciarViajeBotonesSuperior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/BtnIniciarViajeCancelar"
+                    style="@style/est_boton"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/dra_boton_fondo"
+                    android:onClick="onClick_BtnIniciarViajeCancelar"
+                    android:src="@mipmap/icon_cancelar120" />
+
+                <TextView
+                    android:id="@+id/textView20"
+
+                    style="@style/est_boton_texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/BtnIniciarViajeLlamar"
+                    style="@style/est_boton"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/dra_boton_fondo"
+                    android:onClick="onClick_BtnIniciarViajelLlamar"
+                    android:src="@mipmap/icon_llamar120" />
+
+                <TextView
+                    android:id="@+id/textView7"
+
+                    style="@style/est_boton_texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Llamar"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/BtnIniciarViajeMensajeCentral"
+                    style="@style/est_boton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/dra_boton_fondo"
+                    android:onClick="onClick_BtnIniciarViajeMensajeCentral"
+                    android:src="@mipmap/icon_mensaje_central120" />
+
+                <TextView
+                    android:id="@+id/textView128"
+                    style="@style/est_boton_texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Central"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/BtnIniciarViajeAbordo"
+                    style="@style/est_boton"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/dra_boton_fondo"
+                    android:onClick="onClick_BtnIniciarViajeAbordo"
+                    android:src="@mipmap/icon_abordo120" />
+
+                <TextView
+                    android:id="@+id/textView24"
+
+                    style="@style/est_boton_texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abordo"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

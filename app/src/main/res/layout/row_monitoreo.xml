@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dra_fondo_listado_item"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout25"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_toEndOf="@+id/ImgMonitoreoTipo"
+        android:layout_toRightOf="@+id/ImgMonitoreoTipo"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/LblDireccion"
+            style="@style/est_monitoreo_fila_etiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/CmpMonitoreoDireccion"
+            android:layout_alignLeft="@+id/CmpMonitoreoDireccion"
+            android:layout_alignTop="@+id/ImgMonitoreoTipo"
+            android:text="Dirección:" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImgMonitoreoTipo"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/linearLayout27"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:src="@mipmap/icon_monitoreo35" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout26"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImgMonitoreoTipo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/LblMonitoreoReferencia"
+            style="@style/est_monitoreo_fila_etiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/CmpMonitoreoDireccion"
+            android:layout_toEndOf="@+id/ImgMonitoreoTipo"
+            android:layout_toRightOf="@+id/ImgMonitoreoTipo"
+            android:text="Referencia:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout30"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout28"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/CapMonitoreoCambioDe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/LblMonitoreoCambioDe"
+                style="@style/est_monitoreo_fila_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CmpMonitoreoReferencia"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Cambio de:"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/CmpMonitoreoCambioDe"
+                style="@style/est_monitoreo_fila_tipo_unidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CmpPedidoDisponible"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.5"
+                android:background="@drawable/dra_campo"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CapMonitoreoTipoUnidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/LblMonitoreoTipoUnidad"
+                style="@style/est_monitoreo_fila_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CmpMonitoreoReferencia"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Tipo Unidad:"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/CmpMonitoreoTipoUnidad"
+                style="@style/est_monitoreo_fila_tipo_unidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CmpPedidoDisponible"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.5"
+                android:background="@drawable/dra_campo"
+                android:text="STATION WAGON" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CapMonitoreoTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/LblMonitoreoTipo"
+                style="@style/est_monitoreo_fila_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CmpMonitoreoReferencia"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Tipo de Servicio:"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/CmpMonitoreoTipo"
+                style="@style/est_monitoreo_fila_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CmpPedidoDisponible"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dra_campo"
+                android:text="COMPRA Y OTROS" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout27"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout25"
+        android:layout_toEndOf="@+id/ImgMonitoreoTipo"
+        android:layout_toRightOf="@+id/ImgMonitoreoTipo"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/CmpMonitoreoDireccion"
+            style="@style/est_monitoreo_fila_contenido"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/LblDireccion"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/ImgMonitoreoTipo"
+            android:background="@drawable/dra_campo"
+            android:text="destino" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout28"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/linearLayout26"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/CmpMonitoreoReferencia"
+            style="@style/est_monitoreo_fila_contenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/LblMonitoreoReferencia"
+            android:layout_alignStart="@+id/LblMonitoreoReferencia"
+
+            android:layout_alignLeft="@+id/LblMonitoreoReferencia"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dra_campo"
+            android:text="referencia" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/linearLayout30"
+        android:background="@drawable/dra_separacion"
+        android:orientation="horizontal" /><![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+    Layout>
+
+
+
+
+
+]]>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+
+    <CheckBoxPreference
+        android:key="notifications_mensaje"
+
+        android:title="@string/pref_mensaje_title"
+        android:defaultValue="true" />
+
+    <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+
+    <!-- android:dependency="notifications_new_message"-->
+
+
+   <!-- <RingtonePreference
+        android:key="notifications_new_message_ringtone"
+
+        android:title="@string/pref_title_ringtone"
+        android:ringtoneType="notification"
+        android:defaultValue="content://settings/system/notification_sound" />-->
+
+    <ListPreference
+        android:dependency="notifications_mensaje"
+
+        android:key="notifications_general_sonido"
+        android:title="@string/pref_general_sonido_title"
+
+        android:entries="@array/pref_general_sonido_titles"
+        android:entryValues="@array/pref_general_sonido_values"
+        android:defaultValue="1"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+
+
+    <!--android:dependency="notifications_new_message"-->
+    <CheckBoxPreference
+    android:dependency="notifications_mensaje"
+
+    android:key="notifications_vibrar"
+    android:title="@string/pref_vibrar_titulo"
+
+    android:defaultValue="true" />
+
+</PreferenceScreen>

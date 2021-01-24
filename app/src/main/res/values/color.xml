@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="ColorFondo1">#F5F5F5</color>
+    <color name="ColorFondo2">#FFFF00</color>
+
+    <color name="ColorFondo3">#FFCC00</color>
+    <color name="ColorFondo4">#FFCC00</color>
+
+    <color name="ColorFondo5">#0066CC</color>
+    <color name="ColorFondo6">#3375FF</color>
+
+    <color name="ColorFondo7">#FFFFFF</color>
+    <color name="ColorFondo8">#E8E8E8</color>
+
+    <color name="ColorFondo9">#E8E8E8</color>
+    <color name="ColorFondo10">#FFFFFF</color>
+
+    <color name="ColorFondo11">#1C6CE7</color>
+    <color name="ColorFondo12">#3D83EB</color>
+
+    <color name="ColorFondo13">#F5F5F5</color>
+    <color name="ColorFondo14">#F5F5F5</color>
+
+
+    <color name="ColorFondo15">#666666</color>
+    <color name="ColorFondo16">#999999</color>
+
+    <color name="ColorFondo17">#FF0000</color>
+    <color name="ColorFondo18">#FF3737</color>
+
+
+    <color name="ColorFondo19">#66CC33</color>
+    <color name="ColorFondo20">#80D557</color>
+
+    <color name="ColorFondo21">#FFCC00</color>
+    <color name="ColorFondo22">#FFCC00</color>
+
+    <color name="ColorFondo23">#D2E9FF</color>
+    <color name="ColorFondo24">#B7DBFF</color>
+
+
+
+    <color name="ColorFondoBoton1">#1C6CE7</color>
+    <color name="ColorFondoBoton2">#3D83EB</color>
+    <color name="ColorBordeBoton1">#3D83EB</color>
+
+
+    <color name="ColorFondoConductorHabilitado1">#66CC33</color>
+    <color name="ColorFondoConductorHabilitado2">#80D557</color>
+
+    <color name="ColorFondoConductorDeshabilitado1">#FF0000</color>
+    <color name="ColorFondoConductorDeshabilitado2">#FF3737</color>
+
+    <color name="ColorFondoConductorRetirado1">#666666</color>
+    <color name="ColorFondoConductorRetirado2">#999999</color>
+
+    <color name="ColorBorde1">#E8E8E8</color>
+    <color name="ColorBorde2">#F5F5F5</color>
+    <color name="ColorBorde3">#999999</color>
+
+    <color name="ColorTexto1">#1F92D5</color>
+    <color name="ColorTexto2">#999999</color>
+    <color name="ColorTexto3">#FF3737</color>
+
+
+
+
+
+    <color name="ColorFondo">#F5F5F5</color>
+
+
+    <color name="ColorFondoPrimario">#F3F3F3</color>
+    <color name="ColorFondoSecundario">#E8E8E8</color>
+
+
+
+    <color name="ColorSeparacion">#3D83EB</color>
+
+   <!-- <color name="ColorPrimario">#237DC7</color>
+    <color name="ColorSecundario">#1F92D5</color>-->
+    <color name="ColorPrimario">#1C6CE7</color>
+    <color name="ColorSecundario">#1F92D5</color>
+
+    <color name="ColorBotonTexto">#FFFFFF</color>
+
+    <color name="ColorSombra">#CCCCCC</color>
+
+    <color name="ColorTitulo">#1C6CE7</color>
+    <color name="ColorEtiqueta">#1C6CE7</color>
+    <color name="ColorSubEtiqueta">#666666</color>
+
+    <color name="ColorContenido">#000000</color>
+    <color name="ColorAviso">#CCCCCC</color>
+
+    <color name="ColorImportante">#00CC33</color>
+    <color name="ColorImportante2">#FF0000</color>
+    <color name="ColorImportante3">#EF9B0F</color>
+
+    <color name="ColorPrimario2">#666666</color>
+    <color name="ColorSecundario2">#999999</color>
+
+   <!-- <color name="ColorBarraMenuCenter">#237DC7</color>
+    <color name="ColorBarraMenuEnd">#1F92D5</color>
+    <color name="ColorBarraMenuStart">#1F92D5</color>-->
+    <color name="ColorBarraMenuCenter">#3D83EB</color>
+    <color name="ColorBarraMenuEnd">#1C6CE7</color>
+    <color name="ColorBarraMenuStart">#1C6CE7</color>
+
+</resources>

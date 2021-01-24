@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dra_fondo_listado_item"
+
+    >
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/ImgFoto"
+        android:src="@mipmap/icon_historial35"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout14"
+        android:layout_toRightOf="@+id/ImgFoto"
+        android:layout_toEndOf="@+id/ImgFoto">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Destino:"
+
+                style="@style/est_etiqueta"
+
+                android:id="@+id/textView27"
+                android:layout_alignTop="@+id/ImgFoto"
+                android:layout_toRightOf="@+id/ImgFoto"
+                android:layout_toEndOf="@+id/ImgFoto"
+                android:layout_weight="0.7" />
+
+            <TextView
+                style="@style/est_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Num.:"
+                android:id="@+id/textView12"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/CmpNumero"
+                android:layout_toStartOf="@+id/CmpNumero" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:background="@drawable/dra_campo"
+                android:id="@+id/CmpSoporteContactoCelular"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="mi destino"
+
+                style="@style/est_contenido"
+
+                android:layout_below="@+id/textView27"
+                android:layout_alignLeft="@+id/textView27"
+                android:layout_alignStart="@+id/textView27"
+                android:layout_weight="0.9" />
+
+            <TextView
+                android:background="@drawable/dra_campo"
+
+                style="@style/est_contenido"
+                android:id="@+id/CmpNumero"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="numero"
+
+                android:layout_alignTop="@+id/CmpSoporteContactoCelular"
+                android:layout_alignRight="@+id/CmpClienteNombre"
+                android:layout_alignEnd="@+id/CmpClienteNombre" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout15"
+        android:layout_alignRight="@+id/linearLayout14"
+        android:layout_alignEnd="@+id/linearLayout14"
+        android:layout_below="@+id/linearLayout19">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Fecha:"
+
+                style="@style/est_etiqueta"
+
+                android:id="@+id/textView29"
+                android:layout_below="@+id/CmpReferencia"
+                android:layout_alignLeft="@+id/ImgFoto"
+                android:layout_alignStart="@+id/ImgFoto"
+                android:layout_weight="0.5" />
+
+            <TextView
+                style="@style/est_etiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Hora:"
+                android:id="@+id/textView9"
+                android:layout_alignBottom="@+id/textView29"
+                android:layout_toRightOf="@+id/textView28"
+                android:layout_toEndOf="@+id/textView28"
+                android:layout_marginLeft="66dp"
+                android:layout_marginStart="66dp"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@drawable/dra_campo"
+
+                android:id="@+id/CmpSoporteContactoNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="00/00/0000"
+
+                style="@style/est_contenido"
+
+                android:layout_below="@+id/textView29"
+                android:layout_alignLeft="@+id/textView29"
+                android:layout_alignStart="@+id/textView29"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:background="@drawable/dra_campo"
+
+                style="@style/est_contenido"
+                android:id="@+id/CmpHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000"
+                android:layout_above="@+id/textView36"
+                android:layout_toRightOf="@+id/textView28"
+                android:layout_toEndOf="@+id/textView28"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout14">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Referencia:"
+
+            style="@style/est_etiqueta"
+
+            android:id="@+id/textView28"
+            android:layout_below="@+id/CmpSoporteContactoCelular"
+            android:layout_alignLeft="@+id/CmpSoporteContactoCelular"
+            android:layout_alignStart="@+id/CmpSoporteContactoCelular"
+            android:layout_weight="1" />
+
+        <TextView
+            android:background="@drawable/dra_campo"
+            android:id="@+id/CmpReferencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="mi referencia"
+
+            style="@style/est_contenido"
+
+            android:layout_below="@+id/textView28"
+            android:layout_alignLeft="@+id/textView28"
+            android:layout_alignStart="@+id/textView28"
+            android:layout_alignRight="@+id/CmpNumero"
+            android:layout_alignEnd="@+id/CmpNumero" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linearLayout21"
+        android:layout_below="@+id/linearLayout15"
+        android:layout_alignRight="@+id/linearLayout14"
+        android:layout_alignEnd="@+id/linearLayout14">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Cliente:"
+
+            style="@style/est_etiqueta"
+
+            android:id="@+id/textView36"
+            android:layout_below="@+id/CmpSoporteContactoNombre"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29"
+            android:layout_weight="1" />
+
+        <TextView
+            android:background="@drawable/dra_campo"
+
+            android:id="@+id/CmpClienteNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="JUAN PEREZ PEREZ"
+
+            style="@style/est_contenido"
+
+            android:layout_below="@+id/CapContenidos"
+            android:layout_alignLeft="@+id/CmpReferencia"
+            android:layout_alignStart="@+id/CmpReferencia" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout39"
+        android:layout_below="@+id/linearLayout21"
+        android:layout_alignLeft="@+id/ImgFoto"
+        android:layout_alignStart="@+id/ImgFoto"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/est_etiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Calificacion:"
+            android:id="@+id/textView67"
+            android:layout_below="@+id/CmpSoporteContactoNombre"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/est_contenido"
+            android:background="@drawable/dra_campo"
+            android:id="@+id/CmpPedidoCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:layout_below="@+id/CapContenidos"
+            android:layout_alignLeft="@+id/CmpReferencia"
+            android:layout_alignStart="@+id/CmpReferencia" />
+    </LinearLayout>
+
+</RelativeLayout>

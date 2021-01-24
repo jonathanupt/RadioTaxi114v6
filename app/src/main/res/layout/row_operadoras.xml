@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dra_fondo_listado_item"
+>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/ImgOperadorasActivo"
+        android:src="@mipmap/icon_agenda_supervisor150"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout14"
+        android:layout_toRightOf="@+id/ImgOperadorasActivo"
+        android:layout_toEndOf="@+id/ImgOperadorasActivo">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Nombre"
+
+                style="@style/est_etiqueta"
+
+                android:id="@+id/textView27"
+                android:layout_alignTop="@+id/ImgOperadorasActivo"
+                android:layout_toRightOf="@+id/ImgOperadorasActivo"
+                android:layout_toEndOf="@+id/ImgOperadorasActivo"
+                android:layout_weight="0.7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:background="@drawable/dra_campo"
+                android:id="@+id/CmpOperadorasNombre"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="jonathan"
+
+                style="@style/est_contenido"
+
+                android:layout_below="@+id/textView27"
+                android:layout_alignLeft="@+id/textView27"
+                android:layout_alignStart="@+id/textView27"
+                android:layout_weight="0.9" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

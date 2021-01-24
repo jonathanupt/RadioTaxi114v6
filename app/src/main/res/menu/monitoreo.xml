@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_aviso" android:title="@string/action_aviso"
+        app:showAsAction="always" android:icon="@mipmap/icon_mensaje50">
+    </item>
+
+    <item android:id="@+id/action_ver_alerta" android:title="@string/action_ver_alerta"
+        app:showAsAction="always" android:icon="@mipmap/icon_ver_alerta50">
+    </item>
+
+    <item android:id="@+id/action_alerta" android:title="@string/action_alerta"
+        app:showAsAction="never" android:icon="@mipmap/icon_alerta50"
+        >
+        <menu>
+            <group android:id="@+id/grupo2">
+
+                <item android:id="@+id/action_registrar_alerta1" android:title="@string/action_registrar_alerta1"
+                    android:orderInCategory="100" app:showAsAction="ifRoom" />
+
+                <item android:id="@+id/action_registrar_alerta2" android:title="@string/action_registrar_alerta2"
+                    android:orderInCategory="100" app:showAsAction="ifRoom" />
+
+                <item android:id="@+id/action_registrar_alerta3" android:title="@string/action_registrar_alerta3"
+                    android:orderInCategory="100" app:showAsAction="ifRoom" />
+
+                <item android:id="@+id/action_registrar_alerta4" android:title="@string/action_registrar_alerta4"
+                    android:orderInCategory="100" app:showAsAction="ifRoom" />
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

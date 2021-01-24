@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="radiotaxi114.radiotaxi114v6">
+    <!-- 18-08-17 04:25 -->
+    <uses-permission android:name="radiotaxi114.radiotaxi114v6.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".IniciarViajeActivity"
+            android:label="@string/title_activity_iniciar_viaje"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".GpsTrackerBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".GpsTrackerAlarmReceiver" />
+
+        <service android:name=".LocationService" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCXzSMyuJtljfFrtAhuPbqOhah1JXIdRyw" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".PedidoClienteActivity"
+            android:label="@string/title_activity_pedido_cliente"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreferenciasActivity"
+            android:label="@string/title_activity_preferencias"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MonitoreoActivity"
+            android:label="@string/title_activity_monitoreo"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListarSupervisoresActivity"
+            android:label="@string/title_activity_listar_supervisores"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HistorialActivity"
+            android:label="@string/title_activity_historial"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecepcionArchivosActivity"
+            android:label="@string/title_activity_recepcion_archivos"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MisPreferenciasActivity"
+            android:label="@string/title_activity_mis_preferencias"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LeyendaActivity"
+            android:label="@string/title_activity_leyenda"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RadarActivity"
+            android:label="@string/title_activity_radar"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RankingActivity"
+            android:label="@string/title_activity_ranking"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SupervisorActivity"
+            android:label="@string/title_activity_supervisor"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BuscarConductorActivity"
+            android:label="@string/title_activity_buscar_conductor"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConductorActualActivity"
+            android:label="@string/title_activity_conductor_actual"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConductorAlertaActualActivity"
+            android:label="@string/title_activity_conductor_alerta_actual"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConductorUbicacionActivity"
+            android:label="@string/title_activity_conductor_ubicacion"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PedidoActualActivity"
+            android:label="@string/title_activity_pedido_actual"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PedidoDetalleActivity"
+            android:label="@string/title_activity_pedido_detalle"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConductorAlertasActivity"
+            android:label="@string/title_activity_conductor_alertas"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PedidoCancelacionActivity"
+            android:label="@string/title_activity_pedido_cancelacion"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RadioActivity"
+            android:label="@string/title_activity_radio"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MisDatosActivity"
+            android:label="@string/title_activity_mis_datos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistrarIncidenteActivity"
+            android:label="@string/title_activity_registrar_incidente"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SoporteActivity"
+            android:label="@string/title_activity_soporte"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HistorialDetalleActivity"
+            android:label="@string/title_activity_historial_detalle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OperadorasActivity"
+            android:label="@string/title_activity_operadoras"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

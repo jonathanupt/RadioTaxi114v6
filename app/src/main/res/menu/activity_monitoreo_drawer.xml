@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:title="@string/action_titulo1" android:checkableBehavior="single" >
+
+
+        <item
+            android:id="@+id/nav_ver_cuenta"
+            android:icon="@mipmap/icon_cuenta50"
+            android:title="@string/action_datos" />
+
+        <item
+            android:id="@+id/nav_historial"
+            android:icon="@mipmap/icon_historial50"
+            android:title="@string/action_historial" />
+
+        <item
+            android:id="@+id/nav_soporte"
+            android:icon="@mipmap/icon_soporte50"
+            android:title="@string/action_soporte" />
+
+        <item
+            android:id="@+id/nav_modulo_supervisor"
+            android:icon="@mipmap/icon_modulo_supervisor50"
+            android:title="@string/action_modulo_supervisor" />
+
+        <item
+            android:id="@+id/nav_listar_supervisores"
+            android:icon="@mipmap/icon_supervisor50"
+            android:title="@string/action_listar_supervisores" />
+
+        <item
+            android:id="@+id/nav_listar_operadoras"
+            android:icon="@mipmap/icon_operadoras50"
+            android:title="@string/action_listar_operadoras" />
+        <item
+            android:id="@+id/nav_mis_preferencias"
+            android:icon="@mipmap/icon_mis_preferencias50"
+            android:title="@string/action_mis_preferencias" />
+
+        <!--<item
+            android:id="@+id/nav_recepcion_archivos"
+            android:icon="@mipmap/icon_archivos50"
+            android:title="@string/action_recepcion_archivos" />-->
+
+        <item
+            android:id="@+id/nav_leyenda"
+            android:icon="@mipmap/icon_leyenda50"
+            android:title="@string/action_leyenda" />
+
+
+
+       <item
+            android:id="@+id/nav_ranking"
+            android:icon="@mipmap/icon_ranking50"
+            android:title="@string/action_ranking" />
+
+
+
+
+
+<!--
+
+        <item
+            android:id="@+id/nav_registrar_incidente"
+            android:icon="@mipmap/icon_eventos50"
+            android:title="@string/action_registrar_incidente" />-->
+
+<!--
+        <item
+            android:id="@+id/nav_radio"
+            android:icon="@mipmap/icon_grabar50"
+            android:title="@string/action_radio" />-->
+
+
+        <item
+            android:id="@+id/nav_salir_cuenta"
+            android:icon="@mipmap/icon_cerrar_sesion50"
+            android:title="@string/action_cerrar_sesion" />
+
+        <item
+            android:id="@+id/nav_acerca_de"
+            android:icon="@mipmap/icon_acercade50"
+            android:title="@string/action_acerca_de" />
+
+
+    </group>
+
+    <item android:title="@string/action_titulo2">
+        <menu>
+
+            <!--
+            <item
+                android:id="@+id/nav_compartir"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/action_compartir" />
+-->
+
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@mipmap/icon_salir50"
+                android:title="@string/action_salir" />
+
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ConductorActualActivity"
+    tools:showIn="@layout/activity_conductor_actual_activity"
+    android:background="@drawable/dra_fondo"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CapScroll"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/CapContenidoScroll"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:id="@+id/CapFoto">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dra_fondo_foto"
+                    android:id="@+id/CapConductorFoto"
+                    android:layout_margin="2dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/ImgConductorFoto1"
+                        android:src="@mipmap/conductor_foto" />
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/ImgConductorFoto2"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/dra_fondo_contenido"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CapContenidos"
+                android:layout_below="@+id/CapTitulo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <LinearLayout
+                    android:id="@+id/CapNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/textView56"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        style="@style/est_etiqueta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView56"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="0.1"
+                        android:text="Version:" />
+
+                    <TextView
+                        android:id="@+id/CmpConductorActualConductorVersion"
+                        style="@style/est_contenido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CmpNumero"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/dra_campo"
+                        android:text="1.x"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CapDireccion"
+                    android:id="@+id/CapEstadoDescripcion" >
+
+                    <TextView
+                        style="@style/est_etiqueta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estado:"
+                        android:id="@+id/textView16"
+                        android:layout_below="@+id/CmpConductorDireccion"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        style="@style/est_contenido"
+                        android:background="@drawable/dra_campo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="HABILITADO"
+                        android:id="@+id/CmpConductorEstadoDescripcion"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView55"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CapDireccion"
+                        android:id="@+id/CapEstadoMotivo"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Motivo:"
+                            android:id="@+id/textView19"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Otros"
+                            android:id="@+id/CmpConductorEstadoMotivo"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView55"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CapDireccion"
+                        android:id="@+id/CapEstadoResponsable"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Responsable:"
+                            android:id="@+id/textView93"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="A-00"
+                            android:id="@+id/CmpConductorEstadoResponsable"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView55"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CapNombre"
+                    android:layout_below="@+id/textView56" >
+
+                    <TextView
+                        style="@style/est_etiqueta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre:"
+                        android:id="@+id/textView45"
+                        android:layout_below="@+id/textView56"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        style="@style/est_contenido"
+                        android:background="@drawable/dra_campo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="NOMBRE DEL CONDUCTOR"
+                        android:id="@+id/CmpSoporteContactoCelular"
+                        android:layout_below="@+id/CmpNumero"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CapDireccion"
+                    android:layout_below="@+id/CapNombre"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" >
+
+                    <TextView
+                        style="@style/est_etiqueta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dirección:"
+                        android:id="@+id/textView48"
+                        android:layout_below="@+id/CmpSoporteContactoCelular"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        style="@style/est_contenido"
+                        android:background="@drawable/dra_campo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="DIRECCION DEL CONDUCTOR"
+                        android:id="@+id/CmpConductorDireccion"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView48" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CapDireccion"
+                    android:id="@+id/CapTelefonoCelular" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/CapTelefono"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Telefono:"
+                            android:id="@+id/textView50"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="052857485"
+                            android:id="@+id/CmpConductorTelefono"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/CmpVehiculoPlaca"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/CapCelular"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Celular:"
+                            android:id="@+id/textView51"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="952000000"
+                            android:id="@+id/CmpConductorCelular"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/CmpVehiculoPlaca"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CapDireccion"
+                    android:id="@+id/CapUnidadPlaca" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/CapUnidad"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unidad:"
+                            android:id="@+id/textView53"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="A-01"
+                            android:id="@+id/CmpSoporteContactoNombre"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/CmpVehiculoPlaca"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/CapPlaca"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Placa:"
+                            android:id="@+id/textView54"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="XYZ-123"
+                            android:id="@+id/CmpVehiculoPlaca"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/CmpVehiculoPlaca"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CapDireccion"
+                    android:id="@+id/CapModeloColor" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:id="@+id/CapModelo">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Modelo:"
+                            android:id="@+id/textView47"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="CHEVROLET SAIL"
+                            android:id="@+id/CmpVehiculoModelo"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView55" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:id="@+id/CapColor">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Color"
+                            android:id="@+id/textView38"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="BLANCO"
+                            android:id="@+id/CmpVehiculoColor"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView55" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/CapTipoUnidadMarca">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/CapMarca"
+                        android:layout_weight="0.5" >
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Marca:"
+                            android:id="@+id/textView105"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="CHEVROLET SAIL"
+                            android:id="@+id/CmpVehiculoMarca"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView55"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CapDireccion"
+                        android:id="@+id/CapTipoUnidad"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/est_etiqueta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tipo de Unidad:"
+                            android:id="@+id/textView32"
+                            android:layout_below="@+id/CmpConductorDireccion"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            style="@style/est_contenido"
+                            android:background="@drawable/dra_campo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="STATION"
+                            android:id="@+id/CmpVehiculoCarroceria"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView55"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/CapConductorActualPropietarioNombre" >
+
+                    <TextView
+                        style="@style/est_etiqueta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Propietario:"
+                        android:id="@+id/textView125"
+                        android:layout_below="@+id/CmpConductorDireccion"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        style="@style/est_contenido"
+                        android:background="@drawable/dra_campo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="JOSE PEREZ PEREZ"
+                        android:id="@+id/CmpConductorActualPropietarioNombre"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView55"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/CapConductorActualPropietarioCelular" >
+
+                    <TextView
+                        style="@style/est_etiqueta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contacto Propietario:"
+                        android:id="@+id/textView127"
+                        android:layout_below="@+id/CmpConductorDireccion"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        style="@style/est_contenido"
+                        android:background="@drawable/dra_campo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="980767388"
+                        android:id="@+id/CmpConductorActualPropietarioCelular"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView55"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:id="@+id/CapVehiculoFoto" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dra_fondo_foto"
+                    android:id="@+id/CapConductorVehiculoFoto"
+                    android:layout_margin="2dp">
+
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/ImgConductorVehiculoFoto1"
+                        android:src="@mipmap/conductor_foto" />
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/ImgConductorVehiculoFoto2"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/CapBotones">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center_horizontal" >
+
+                        <ImageButton
+                            style="@style/est_boton"
+                            android:background="@drawable/dra_boton_fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BtnConductorActualResetear"
+                            android:src="@mipmap/icon_resetear150"
+                            android:layout_weight="0.33"
+                            android:onClick="onClick_BtnConductorActualResetear" />
+
+                        <TextView
+                            style="@style/est_boton_texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Resetear"
+                            android:id="@+id/textView81" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center_horizontal"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            style="@style/est_boton"
+                            android:background="@drawable/dra_boton_fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BtnConductorActualSincronizar"
+                            android:src="@mipmap/icon_sincronizar150"
+                            android:layout_weight="0.33"
+                            android:onClick="onClick_BtnConductorActualSincronizar" />
+
+                        <TextView
+                            style="@style/est_boton_texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Sincronizar"
+                            android:id="@+id/textView80" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center_horizontal" >
+
+                        <ImageButton
+                            style="@style/est_boton"
+                            android:background="@drawable/dra_boton_fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BtnConductorActualHabilitar"
+                            android:src="@mipmap/icon_habilitar150"
+                            android:layout_weight="0.33"
+                            android:onClick="onClick_BtnConductorActualHabilitar" />
+
+                        <TextView
+                            style="@style/est_boton_texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Habilitar"
+                            android:id="@+id/textView56" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center_horizontal" >
+
+                        <ImageButton
+                            style="@style/est_boton"
+                            android:background="@drawable/dra_boton_fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BtnConductorActualDeshabilitar"
+                            android:src="@mipmap/icon_deshabilitar150"
+                            android:layout_weight="0.33"
+                            android:onClick="onClick_BtnConductorActualDeshabilitar" />
+
+                        <TextView
+                            style="@style/est_boton_texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Deshabilitar"
+                            android:id="@+id/textView58" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center_horizontal" >
+
+                        <ImageButton
+                            style="@style/est_boton"
+                            android:background="@drawable/dra_boton_fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BtnConductorActualRetirar"
+                            android:src="@mipmap/icon_retirar150"
+                            android:layout_weight="0.33"
+                            android:onClick="onClick_BtnConductorActualRetirar" />
+
+                        <TextView
+                            style="@style/est_boton_texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Retirar"
+                            android:id="@+id/textView101" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center_horizontal" >
+
+                        <ImageButton
+                            style="@style/est_boton"
+                            android:background="@drawable/dra_boton_fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BtnConductorActualLlamar"
+                            android:src="@mipmap/icon_llamar120"
+                            android:layout_weight="0.33"
+                            android:onClick="onClick_BtnConductorActualLlamar" />
+
+                        <TextView
+                            style="@style/est_boton_texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Llamar"
+                            android:id="@+id/textView57" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center_horizontal" >
+
+                        <ImageButton
+                            style="@style/est_boton"
+                            android:background="@drawable/dra_boton_fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BtnConductorActualUbicar"
+                            android:src="@mipmap/icon_ubicar120"
+                            android:layout_weight="0.33"
+                            android:onClick="onClick_BtnConductorActualUbicar" />
+
+                        <TextView
+                            style="@style/est_boton_texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Ubicar"
+                            android:id="@+id/textView60" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center_horizontal" >
+
+                        <ImageButton
+                            style="@style/est_boton"
+                            android:background="@drawable/dra_boton_fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BtnConductorActualRegresar"
+                            android:src="@mipmap/icon_buscar150"
+                            android:layout_weight="0.33"
+                            android:onClick="onClick_BtnConductorActualRegresar" />
+
+                        <TextView
+                            style="@style/est_boton_texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Buscar Otro"
+                            android:id="@+id/textView61" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

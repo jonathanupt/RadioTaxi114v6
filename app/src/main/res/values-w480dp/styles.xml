@@ -1,0 +1,385 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColorPrimario</item>
+        <item name="colorPrimaryDark">@color/ColorSecundario</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+        <item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/ColorBotonTexto</item>
+        <item name="android:textSize" >14sp</item>
+    </style>
+
+    <style name="ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:minWidth">80dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="colorPrimaryDark">@color/ColorBotonTexto</item>
+    </style>
+    <!--
+       PEDIDO DETALLE
+       -->
+
+    <style name="est_pedido_detalle_detalle" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorTexto3</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >16sp</item>
+
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_pedido_detalle_boton_aceptar" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorBotonTexto</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >18sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_pedido_detalle_boton_rechazar" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorBotonTexto</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >18sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <!--
+    PEDIDO ACTUAL
+    -->
+
+    <style name="est_pedido_actual_contenido_detalle" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorTexto3</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >16sp</item>
+
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+
+    <!--
+     MONITOREO
+    -->
+
+    <style name="est_monitoreo_contenido" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorContenido</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >14sp</item>
+
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_monitoreo_etiqueta" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorEtiqueta</item>
+
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >14sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+
+    <style name="est_monitoreo_fila_contenido" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorContenido</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >18sp</item>
+
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_monitoreo_fila_etiqueta" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorEtiqueta</item>
+
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >12sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_monitoreo_fila_detalle" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorImportante2</item>
+
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >18sp</item>
+        <item name="android:textStyle" >bold</item>
+    </style>
+
+    <style name="est_monitoreo_fila_tipo_unidad" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorImportante2</item>
+
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >18sp</item>
+        <item name="android:textStyle" >bold</item>
+    </style>
+
+    <style name="est_monitoreo_fila_contenido_mini" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorContenido</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >14sp</item>
+
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_monitoreo_fila_etiqueta_mini" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorEtiqueta</item>
+
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >14sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <!--
+        SUPERVISOR
+        -->
+
+    <style name="est_supervisor_boton_texto" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorTexto1</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >18sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_supervisor_contenido" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorTexto2</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >14sp</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+
+
+    <!--
+    GENERALES
+    -->
+
+    <style name="est_boton" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorBotonTexto</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >12sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_boton_texto" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorTexto1</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >12sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+
+
+    <style name="est_boton_mini" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorBotonTexto</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >12sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+
+    <style name="est_titulo" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorTitulo</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >14sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+
+    <style name="est_contenido" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorContenido</item>
+
+        <item name="android:layout_margin" >1dp</item>
+        <item name="android:textSize" >16sp</item>
+
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_etiqueta" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorEtiqueta</item>
+
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >16sp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_subetiqueta" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorSubEtiqueta</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >0dp</item>
+        <item name="android:textSize" >10sp</item>
+        <item name="android:textStyle" >bold</item>
+
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="est_aviso" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorAviso</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >12sp</item>
+        <item name="android:textStyle" >bold</item>
+        <!-- <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>-->
+    </style>
+
+    <style name="est_importante" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorImportante</item>
+
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >12sp</item>
+        <item name="android:textStyle" >bold</item>
+        <!--  <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>-->
+
+    </style>
+
+    <style name="est_importante2" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/ColorImportante2</item>
+
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >14sp</item>
+        <item name="android:textStyle" >bold</item>
+        <!--  <item name="android:shadowColor" >@color/ColorSombra</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>-->
+
+    </style>
+
+</resources>

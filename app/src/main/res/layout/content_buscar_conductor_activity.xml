@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BuscarConductorActivity"
+    tools:showIn="@layout/activity_buscar_conductor_activity"
+    android:background="@drawable/dra_fondo"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CapFiltros"
+        android:background="@drawable/dra_fondo_contenido">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/CmpFiltro"
+            style="@style/est_contenido"
+            android:background="@drawable/dra_campo"
+            android:layout_weight="0.9" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnBuscarConductorBuscar"
+            android:src="@mipmap/icon_buscar150"
+            style="@style/est_boton"
+            android:background="@drawable/dra_boton_fondo"
+            android:longClickable="true"
+            android:onClick="onClick_BtnBuscarConductorBuscar"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LstConductores"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CapFiltros"
+        android:layout_above="@+id/CapContenidos"
+        android:background="@drawable/fondo_listado" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/CapBotones"
+        android:visibility="gone">
+
+        <Button
+            style="@style/est_boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:id="@+id/BtnBuscarConductorRegresar"
+            android:background="@drawable/dra_boton_fondo"
+            android:drawableLeft="@mipmap/icon_regresar35"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick_BtnBuscarConductorRegresar"
+            android:longClickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CapEstadoDescripcion"
+        android:layout_above="@+id/CapBotones"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/est_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Busqueda de conductores"
+            android:id="@+id/textView37"
+            android:layout_above="@+id/BtnRecepcionArchivoRegresar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CapContenidos"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/CapBotones"
+        android:layout_alignStart="@+id/CapBotones">
+
+        <TextView
+            style="@style/est_etiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se encontraron (0) resultados"
+            android:id="@+id/CmpConductoresTotal"
+            android:layout_alignLeft="@+id/spinner"
+            android:layout_alignStart="@+id/spinner" />
+    </LinearLayout>
+
+</RelativeLayout>

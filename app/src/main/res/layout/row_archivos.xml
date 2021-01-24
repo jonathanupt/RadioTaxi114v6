@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dra_fondo_listado_item"
+
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout43">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ImgFoto"
+                android:src="@mipmap/icon_pdf50"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Titulo:"
+
+                    style="@style/est_etiqueta"
+
+                    android:id="@+id/textView27"
+                    android:layout_alignTop="@+id/ImgFoto"
+                    android:layout_toRightOf="@+id/ImgFoto"
+                    android:layout_toEndOf="@+id/ImgFoto"
+                    android:layout_weight="0.7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:background="@drawable/dra_campo"
+                    android:id="@+id/CmpSoporteContactoCelular"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Mi titulo"
+
+                    style="@style/est_contenido"
+
+                    android:layout_below="@+id/textView27"
+                    android:layout_alignLeft="@+id/textView27"
+                    android:layout_alignStart="@+id/textView27"
+                    android:layout_weight="0.9" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout43">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/est_etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Fecha y Hora"
+                android:id="@+id/textView76"
+                android:layout_alignTop="@+id/ImgFoto"
+                android:layout_toRightOf="@+id/ImgFoto"
+                android:layout_toEndOf="@+id/ImgFoto"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/est_contenido"
+                android:background="@drawable/dra_campo"
+                android:id="@+id/CmpEnvioArchivoTiempoCreacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi titulo"
+                android:layout_below="@+id/textView27"
+                android:layout_alignLeft="@+id/textView27"
+                android:layout_alignStart="@+id/textView27"
+                android:layout_weight="0.9" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
